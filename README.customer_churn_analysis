@@ -1,0 +1,6 @@
+The customer churn analysis highlights that contract type and payment method are significant factors influencing churn.
+The highest churn rate is observed among customers with month-to-month contracts (42.71%), indicating that customers with less commitment are more likely to leave. In contrast, two-year contract customers exhibit the lowest churn rate (2.83%), suggesting that long-term contracts significantly enhance customer retention.
+Gender-wise, the churn rate is nearly identical between male (26.16%) and female (26.92%) customers, implying that gender may not be a significant factor in churn. 
+Paperless billing shows a strong correlation with churn; customers opting for paperless billing are more than twice as likely to churn (33.57%) compared to those who do not (16.33%). This could indicate a need for improved communication or support mechanisms for those using electronic billing.
+
+In conclusion, focusing on strategies that encourage long-term contracts and addressing potential issues with paperless billing may help reduce churn and improve customer retention. ​
