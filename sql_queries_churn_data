@@ -1,0 +1,44 @@
+SELECT 
+    Contract AS contract_type,
+    COUNT(IF(Churn = 'Yes', 1, NULL)) / COUNT(*) AS churn_rate,
+    AVG(MonthlyCharges) AS avg_monthly_charges,
+    COUNT(*) AS total_customers
+FROM 
+    Telco_Customer_Churn
+GROUP BY 
+    Contract;
+
+SELECT 
+    gender,
+    COUNT(*) AS total_customers,
+    AVG(IF(Churn = 'Yes', 1, 0)) AS churn_rate,
+    SUM(IF(Churn = 'Yes', 1, 0)) AS churn_count
+FROM 
+    Telco_Customer_Churn
+GROUP BY 
+    gender;
+
+SELECT 
+    PaperlessBilling,
+    COUNT(*) AS total_customers,
+    AVG(IF(Churn = 'Yes', 1, 0)) AS churn_rate,
+    SUM(IF(Churn = 'Yes', 1, 0)) AS churn_count
+FROM 
+    Telco_Customer_Churn
+GROUP BY 
+    PaperlessBilling;
+
+SELECT 
+    COUNT(*) AS total_churned_customers
+FROM 
+    Telco_Customer_Churn
+WHERE 
+    Churn = 'Yes';
+
+SELECT 
+    Churn,
+    AVG(MonthlyCharges) AS avg_monthly_charges
+FROM 
+    Telco_Customer_Churn
+GROUP BY 
+    Churn;
